@@ -4,8 +4,12 @@ body {
     background-image: url("media/login-bg.png");
 } 
 
-.venmo-svg-wrapper {
-  width: 240px;  
+.paypal-qr {
+  padding: 1em;
+  width: 180px;  
+}
+.venmo-qr {
+  width: 220px;  
 }
 
 .logo {
