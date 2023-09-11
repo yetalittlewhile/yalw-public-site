@@ -1,11 +1,0 @@
---2023-09-10 03:30:20--  https://images.ctfassets.net/gkyt4bl1j2fs/ym6BkLqyGjMBmiCwtM7AW/829bf561ea771c00839b484cb8edeebb/App_Icon.png?w=276
-Resolving images.ctfassets.net (images.ctfassets.net)... 2600:9000:25f1:d200:12:94b3:c380:93a1, 2600:9000:25f1:6200:12:94b3:c380:93a1, 2600:9000:25f1:c800:12:94b3:c380:93a1, ...
-Connecting to images.ctfassets.net (images.ctfassets.net)|2600:9000:25f1:d200:12:94b3:c380:93a1|:443... connected.
-HTTP request sent, awaiting response... 200 OK
-Length: 2522 (2.5K) [image/png]
-Saving to: ‘App_Icon.png?w=276’
-
-App_Icon.png?w=276                                     0%[                                                                                                                    ]       0  --.-KB/s               App_Icon.png?w=276                                   100%[===================================================================================================================>]   2.46K  --.-KB/s    in 0s      
-
-2023-09-10 03:30:20 (289 MB/s) - ‘App_Icon.png?w=276’ saved [2522/2522]
-
