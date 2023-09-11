@@ -1,18 +1,26 @@
-
 body {
-    background-color: #00693e;
-    background-image: url("media/login-bg.png");
-} 
+  background-color: #00693e;
+  background-image: url("media/login-bg.png");
+}
 
 .paypal-qr {
   padding: 1em;
-  width: 180px;  
+  width: 180px;
 }
+
 .venmo-qr {
-  width: 220px;  
+  width: 220px;
 }
 
 .logo {
   width: 32px;
   padding-right: 5px;
+}
+
+
+/* override the accordian selection color */
+
+.accordion .accordion-button:focus {
+  --bs-accordion-active-bg: #eeeeee;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #dddddd;
 }
