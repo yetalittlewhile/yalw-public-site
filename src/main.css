@@ -4,8 +4,8 @@ body {
 }
 
 .paypal-qr {
-  padding: 1em;
-  width: 180px;
+  padding-top: 1em;
+  width: 165px;
 }
 
 .venmo-qr {
