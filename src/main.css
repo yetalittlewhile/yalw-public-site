@@ -32,3 +32,9 @@ body {
   --bs-accordion-active-bg: #eeeeee;
   --bs-accordion-btn-focus-box-shadow: 0 0 0 0.1rem #dddddd;
 }
+
+
+.black-dan-image {
+  width: 240px;
+  margin-bottom: 3em;
+}
