@@ -1,4 +1,6 @@
 
 
-* maybe consider having some composition so pages can use same layout
-* TODO added donation landing thank-krewe page and set in paypal, venmo, etc.
+* TODO maybe consider having some composition so pages can use same layout
+* TODO move google analytics to common js file
+
+
