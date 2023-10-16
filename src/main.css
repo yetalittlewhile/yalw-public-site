@@ -1,6 +1,8 @@
 body {
   background-color: #00693e;
   background-image: url("media/login-bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 
