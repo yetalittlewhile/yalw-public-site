@@ -16,12 +16,10 @@ body {
 }
 
 .blinkerPref {
-  font-size: small;  
-  font-weight: bold;
-  color: #999
+  font-size: smaller;  
+  color: #999;
+  padding-left: 10px;
 }
-
-
 
 .paypal-qr {
   padding-top: 1em;
