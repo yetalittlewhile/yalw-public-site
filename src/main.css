@@ -25,11 +25,11 @@ body {
 
 .paypal-qr {
   padding-top: 1em;
-  width: 165px;
+  width: 120px;
 }
 
 .venmo-qr {
-  width: 220px;
+  width: 160px;
 }
 
 .logo {
