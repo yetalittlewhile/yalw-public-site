@@ -22,7 +22,6 @@ body {
 }
 
 .paypal-qr {
-  padding-top: 1em;
   width: 120px;
 }
 
@@ -39,7 +38,10 @@ body {
   margin-left: 3px;
 }
 
-
+.zelleText {
+  padding: 0 8% 0 8%;
+  text-align: center!important;
+}
 /* override the accordian selection color */
 
 .accordion .accordion-button:focus {
