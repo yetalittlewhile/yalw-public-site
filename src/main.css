@@ -25,6 +25,10 @@ body {
   width: 120px;
 }
 
+.paypalQRCodeLink {
+  padding-top: 1em;
+}
+
 .venmo-qr {
   width: 160px;
 }
@@ -33,6 +37,13 @@ body {
   width: 32px;
   margin-right: 20px;
 }
+
+.logo-bi {  
+  width: 40px;
+  padding-left: 2px;
+  margin-right: 12px;
+}
+
 .slack-logo {
   /* bump it to line up with the others */
   margin-left: 3px;
