@@ -30,11 +30,6 @@ jobs:
       uses: google-github-actions/setup-gcloud@v2
       with:
         version: '>= 489.0.0'
-    
-    - name: Get current tree
-      run: find . -type f
       
     - name: 'Use gcloud CLI'
-      run: 'gcloud storage ls -a gs://dev.yetalittlewhile.com'
-
-      
+      run: 'gcloud storage rsync -d ./src gs://dev.yetalittlewhile.com/'
