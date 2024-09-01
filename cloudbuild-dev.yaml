@@ -1,8 +1,0 @@
-# triggers for this in https://console.cloud.google.com/cloud-build/triggers;region=global?project=yet-a-little-while
-name: YALW-publishing-DEV
-options:
-  logging: CLOUD_LOGGING_ONLY
-steps:
-- name: 'gcr.io/cloud-builders/gsutil'
-  args: ['-m', 'rsync', '-r', '-d', './src', 'gs://dev.yetalittlewhile.com/']
-
