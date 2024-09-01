@@ -32,4 +32,4 @@ jobs:
         credentials_json: '${{ secrets.GCP_SA_KEY }}'
       
     - name: 'Use gcloud CLI'
-      run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com/'
+      run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com'
