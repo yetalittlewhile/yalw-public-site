@@ -1,0 +1,21 @@
+name: yalw-dev-publishing
+permissions:
+  id-token: write
+  contents: read
+on: push
+jobs:
+  build:
+    permissions:
+      id-token: write
+      contents: read
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - id: 'auth'
+        name: 'Authenticate to Google Cloud'
+        uses: 'google-github-actions/auth@v1'
+        with:
+          create_credentials_file: true
+          workload_identity_provider: 'projects/537021766146/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions'
+          service_account: 'seward-bucknam-livermore@yet-a-little-while.iam.gserviceaccount.com'
