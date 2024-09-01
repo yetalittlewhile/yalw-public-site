@@ -13,7 +13,7 @@ on:
       - dev
 jobs:
   build:
-    name: Publish the latest from the dev branch
+    name: Publish Dev
     runs-on: ubuntu-latest # the runner in which the job will be executed
     steps:
     - uses: actions/checkout@v4
