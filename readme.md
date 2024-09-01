@@ -11,7 +11,7 @@ This is the source for the yetalittlewhile.com site. there are two published loc
 ### local edits
 * first run a httpd so you can preview your work. i run `python3 -m http.server` but any server will do.
 * navigate to the server, e.g. at [localhost:8000/src/](http://localhost:8000/src/)
-* change to the `dev.yetalittlewhile.com` branch: `git checkout -b dev.yetalittlewhile.com`
+* change to the `dev.yetalittlewhile.com` branch: `git checkout -b dev.yetalittlewhile.com` and rebase `git rebase`.
 * modify files and preview locally.
 * `git add` and `git commit` your work when appropriate. when you `git push` to the origin, a GCP Cloud Build job defined in [cloudbuild-dev.yaml](cloudbuild-dev.yaml) will very quickly publish to [dev.yetalittlewhile.com](https://dev.yetalittlewhile.com/) automatically. Preview and qualify the changes there. 
 
