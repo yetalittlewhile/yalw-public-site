@@ -27,3 +27,6 @@ This is the source for the yetalittlewhile.com site. there are two published loc
 ## TODO
 
 * TODO maybe consider having some composition so pages can use same layout
+* TODO prevent commits directly to `main` and then publish on merges.
+
+
