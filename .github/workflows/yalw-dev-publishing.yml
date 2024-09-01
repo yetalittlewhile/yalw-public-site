@@ -32,6 +32,6 @@ jobs:
         version: '>= 489.0.0'
 
     - name: 'Use gcloud CLI'
-      run: 'gcloud info'
+      run: 'gcloud storage ls -a gs://dev.yetalittlewhile.com'
 
       
