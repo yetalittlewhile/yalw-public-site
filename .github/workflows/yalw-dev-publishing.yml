@@ -19,3 +19,9 @@ jobs:
           create_credentials_file: true
           workload_identity_provider: 'projects/537021766146/locations/global/workloadIdentityPools/github-actions-pool/providers/github-actions'
           service_account: 'seward-bucknam-livermore@yet-a-little-while.iam.gserviceaccount.com'
+
+      - name: 'Set up Cloud SDK'
+        uses: 'google-github-actions/setup-gcloud@v2'        
+  
+      - name: 'Use gcloud CLI'
+        run: 'gcloud info'
