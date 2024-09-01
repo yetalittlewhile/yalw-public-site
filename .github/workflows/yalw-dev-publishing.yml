@@ -32,4 +32,4 @@ jobs:
         version: '>= 489.0.0'
       
     - name: 'Use gcloud CLI'
-      run: 'gcloud storage rsync -d ./src gs://dev.yetalittlewhile.com/'
+      run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com/'
