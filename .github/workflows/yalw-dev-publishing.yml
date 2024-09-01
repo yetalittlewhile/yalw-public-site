@@ -10,7 +10,7 @@ on:
   push:
     branches:
       - main
-      - dev
+      - dev.yetalittlewhile.com
 jobs:
   build:
     name: Publish Dev
@@ -30,7 +30,10 @@ jobs:
       uses: google-github-actions/setup-gcloud@v2
       with:
         version: '>= 489.0.0'
-
+    
+    - name: Get current tree
+      run: find . -type f
+      
     - name: 'Use gcloud CLI'
       run: 'gcloud storage ls -a gs://dev.yetalittlewhile.com'
 
