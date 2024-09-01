@@ -1,3 +1,9 @@
+
+## resources
+## https://mahendranp.medium.com/gcp-workload-identity-federation-with-github-actions-1d320f62417c
+## https://github.com/google-github-actions/setup-gcloud
+
+
 name: yalw-dev-publishing
 permissions:
   id-token: write
