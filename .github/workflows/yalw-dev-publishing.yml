@@ -16,10 +16,9 @@ jobs:
     name: Publish the latest from the dev branch
     runs-on: ubuntu-latest # the runner in which the job will be executed
     steps:
-    - name: Checkout the dev branch
-      uses: actions/checkout@v4
+    - uses: actions/checkout@v4
       with:
-        ref: dev.yetalittlwhile.com
+        ref: dev.yetalittlewhile.com
 
     - name: Authenticate on GCS
       uses: google-github-actions/auth@v2
