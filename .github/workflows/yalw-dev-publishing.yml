@@ -5,11 +5,12 @@
 ## https://github.com/google-github-actions/setup-gcloud
 
 # .github/workflows/my-workflow.yml
-name: Website - Production # name of your workflow
+name: Website - Dev
 on:
   push:
     branches:
-      - master # Deployment will be triggered when we will push to the master branch
+      - main
+      - dev
 jobs:
   build:
     name: Publish the latest from the dev branch
