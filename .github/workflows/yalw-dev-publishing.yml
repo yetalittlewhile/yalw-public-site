@@ -30,6 +30,13 @@ jobs:
       with:
         service_account: '${{ secrets.GCP_SA_EMAIL }}'
         credentials_json: '${{ secrets.GCP_SA_KEY }}'
-      
-    - name: 'Use gcloud CLI'
+
+    - name: 'who am i anyway?'
+      run: 'gcloud config list account --format "value(core.account)"'
+
+    - name: 'Rsync to gcs'
       run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com'
+
+
+
+      
