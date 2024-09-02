@@ -9,7 +9,6 @@ name: Website - Dev
 on:
   push:
     branches:
-      - main
       - dev.yetalittlewhile.com
 jobs:
 
@@ -32,9 +31,6 @@ jobs:
         
     - name: Set up Cloud SDK
       uses: google-github-actions/setup-gcloud@v2
-
-    - name: 'who am i anyway?'
-      run: 'gcloud auth list --filter=status:ACTIVE --format="value(account)"'
 
     - name: 'Rsync to gcs'
       run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com'
