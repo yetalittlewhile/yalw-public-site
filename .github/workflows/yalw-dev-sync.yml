@@ -14,19 +14,12 @@ jobs:
     steps:
     - name: Checkout main
       uses: actions/checkout@v4
-      with:
-        ref: main
         
-    - name: 'Pull main'
+    - name: 'Doing the sync'
       run: |
+        git checkout main
+        git pull --all
+        git checkout dev.yetalittlewhile.com
         git pull
-  
-    - name: Checkout dev.yetalittlewhile.com
-      uses: actions/checkout@v4
-      with:
-        ref: dev.yetalittlewhile.com
-  
-    - name: 'Merge and push to origin/main'
-      run: |
-        git merge main
+        git merge main -Xtheirs
         git push origin dev.yetalittlewhile.com
