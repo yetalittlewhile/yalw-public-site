@@ -20,7 +20,8 @@ jobs:
       contents: 'read'
       id-token: 'write'
     steps:
-    - uses: actions/checkout@v4
+    - name: Checkout dev
+      uses: actions/checkout@v4
       with:
         ref: dev.yetalittlewhile.com
 
@@ -32,11 +33,9 @@ jobs:
     
     - name: Set up Cloud SDK
       uses: google-github-actions/setup-gcloud@v2
-      with:
-        version: '>= 489.0.0'
 
     - name: 'who am i anyway?'
-      run: 'gcloud config list account'
+      run: 'gcloud auth list --filter=status:ACTIVE --format="value(account)"'
 
     - name: 'Rsync to gcs'
       run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com'
