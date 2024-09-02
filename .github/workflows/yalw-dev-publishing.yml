@@ -1,23 +1,16 @@
-
-## resources
-## https://www.mickaelvieira.com/blog/2020/01/29/deploying-a-static-website-to-google-cloud-storage-with-github-actions.html
-## https://mahendranp.medium.com/gcp-workload-identity-federation-with-github-actions-1d320f62417c
-## https://github.com/google-github-actions/setup-gcloud
-
-# .github/workflows/my-workflow.yml
-name: Website - Dev
+name: Website Publish (Dev)
 on:
   push:
     branches:
       - dev.yetalittlewhile.com
 jobs:
-
-  build:
+  job:
     name: Publish Dev
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
       id-token: 'write'
+      
     steps:
     - name: Checkout dev
       uses: actions/checkout@v4
@@ -34,7 +27,3 @@ jobs:
 
     - name: 'Rsync to gcs'
       run: 'gcloud storage rsync --recursive --delete-unmatched-destination-objects ./src gs://dev.yetalittlewhile.com'
-
-
-
-      
