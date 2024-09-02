@@ -19,6 +19,7 @@ jobs:
 
     - name: 'Merge and push to origin/main'
       run: |
-        git merge origin/main
+        git pull origin main
+        git merge main
         git push origin dev.yetalittlewhile.com
 
