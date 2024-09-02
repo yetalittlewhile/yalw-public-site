@@ -5,7 +5,7 @@ on:
       - dev.yetalittlewhile.com
 jobs:
   job:
-    name: Publish Dev
+    name: Website Publish (Dev)
     runs-on: ubuntu-latest
     permissions:
       contents: 'read'
