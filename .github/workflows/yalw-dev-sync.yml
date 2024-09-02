@@ -17,6 +17,8 @@ jobs:
         
     - name: 'Doing the sync'
       run: |
+        git config user.name "Arthur Horace Chase"
+        git config user.email "arthur-horace-chase@yealittlewhile.com"
         git checkout main
         git pull --all
         git checkout dev.yetalittlewhile.com
