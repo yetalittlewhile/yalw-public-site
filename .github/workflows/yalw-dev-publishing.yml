@@ -10,6 +10,7 @@ on:
   push:
     branches:
       - dev.yetalittlewhile.com
+      - main
 jobs:
 
   build:
