@@ -12,24 +12,28 @@ on:
       - main
       - dev.yetalittlewhile.com
 jobs:
+
   build:
     name: Publish Dev
-    runs-on: ubuntu-latest # the runner in which the job will be executed
+    runs-on: ubuntu-latest
+    permissions:
+      contents: 'read'
+      id-token: 'write'
     steps:
     - uses: actions/checkout@v4
       with:
         ref: dev.yetalittlewhile.com
-    
-    - name: Set up Cloud SDK
-      uses: google-github-actions/setup-gcloud@v2
-      with:
-        version: '>= 489.0.0'
 
     - name: Authenticate on GCS
       uses: google-github-actions/auth@v2
       with:
         service_account: '${{ secrets.GCP_SA_EMAIL }}'
         credentials_json: '${{ secrets.GCP_SA_KEY }}'
+    
+    - name: Set up Cloud SDK
+      uses: google-github-actions/setup-gcloud@v2
+      with:
+        version: '>= 489.0.0'
 
     - name: 'who am i anyway?'
       run: 'gcloud config list account'
