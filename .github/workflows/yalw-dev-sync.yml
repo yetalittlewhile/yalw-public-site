@@ -16,7 +16,11 @@ jobs:
       uses: actions/checkout@v4
       with:
         ref: main
-
+        
+    - name: 'Pull main'
+      run: |
+        git pull
+  
     - name: Checkout dev.yetalittlewhile.com
       uses: actions/checkout@v4
       with:
@@ -24,5 +28,5 @@ jobs:
   
     - name: 'Merge and push to origin/main'
       run: |
-        git merge -Xtheirs main
+        git merge main
         git push origin dev.yetalittlewhile.com
