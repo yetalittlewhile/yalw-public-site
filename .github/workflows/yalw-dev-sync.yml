@@ -12,13 +12,17 @@ jobs:
       id-token: 'write'
       
     steps:
-    - name: Checkout dev
+    - name: Checkout main
+      uses: actions/checkout@v4
+      with:
+        ref: main
+
+    - name: Checkout dev.yetalittlewhile.com
       uses: actions/checkout@v4
       with:
         ref: dev.yetalittlewhile.com
-
+  
     - name: 'Merge and push to origin/main'
       run: |
         git merge -Xtheirs main
         git push origin dev.yetalittlewhile.com
-
