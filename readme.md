@@ -13,7 +13,7 @@ This is the source for the yetalittlewhile.com site. there are two published loc
 * navigate to the server, e.g. at [localhost:8000/src/](http://localhost:8000/src/)
 * change to the `dev.yetalittlewhile.com` branch: `git checkout -b dev.yetalittlewhile.com` and rebase `git rebase main`.
 * modify files and preview locally.
-* `git add` and `git commit` your work when appropriate. when you `git push` to the origin, a GCP Cloud Build job defined in [cloudbuild-dev.yaml](cloudbuild-dev.yaml) will very quickly publish to [dev.yetalittlewhile.com](https://dev.yetalittlewhile.com/) automatically. Preview and qualify the changes there. 
+* `git add` and `git commit` your work when appropriate. when you `git push` to the origin, a GCP Cloud Build job defined in [yalw-dev-publishing.yml](.github/workflows/yalw-dev-publishing.yml) will very quickly publish to [dev.yetalittlewhile.com](https://dev.yetalittlewhile.com/) automatically. Preview and qualify the changes there. 
 
 ### Publish to prod
 
