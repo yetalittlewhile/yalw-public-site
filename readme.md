@@ -4,8 +4,7 @@ This is the source for the yetalittlewhile.com site. The contents of
 the `docs` directory on the `main` branch will be published to github
 pages. This drives our public site.
 
-> Warning: this is a public repo because everything in it ends up in
-  the public site.
+> NB: this is a public repo! Everything in it ends up in the public site. so no reason for it to be private.
 
 
 ## How to make changes:
